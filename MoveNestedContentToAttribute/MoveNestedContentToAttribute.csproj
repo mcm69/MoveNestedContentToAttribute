@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{272A513A-1011-4D42-96CC-CB52645A4279}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MoveNestedContentToAttribute</RootNamespace>
+    <AssemblyName>MoveNestedContentToAttribute</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="JetBrains.Platform.ReSharper.ComponentModel">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\JetBrains\ReSharper\v7.1\SDK\Bin\JetBrains.Platform.ReSharper.ComponentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="JetBrains.Platform.ReSharper.ProjectModel">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\JetBrains\ReSharper\v7.1\SDK\Bin\JetBrains.Platform.ReSharper.ProjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="JetBrains.Platform.ReSharper.Shell">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\JetBrains\ReSharper\v7.1\SDK\Bin\JetBrains.Platform.ReSharper.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="JetBrains.Platform.ReSharper.TextControl">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\JetBrains\ReSharper\v7.1\SDK\Bin\JetBrains.Platform.ReSharper.TextControl.dll</HintPath>
+    </Reference>
+    <Reference Include="JetBrains.Platform.ReSharper.Util">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\JetBrains\ReSharper\v7.1\SDK\Bin\JetBrains.Platform.ReSharper.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="JetBrains.ReSharper.Daemon">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\JetBrains\ReSharper\v7.1\SDK\Bin\JetBrains.ReSharper.Daemon.dll</HintPath>
+    </Reference>
+    <Reference Include="JetBrains.ReSharper.Feature.Services.Xaml">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\JetBrains\ReSharper\v7.1\SDK\Bin\JetBrains.ReSharper.Feature.Services.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="JetBrains.ReSharper.Intentions">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\JetBrains\ReSharper\v7.1\SDK\Bin\JetBrains.ReSharper.Intentions.dll</HintPath>
+    </Reference>
+    <Reference Include="JetBrains.ReSharper.Psi">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\JetBrains\ReSharper\v7.1\SDK\Bin\JetBrains.ReSharper.Psi.dll</HintPath>
+    </Reference>
+    <Reference Include="JetBrains.ReSharper.Psi.Xaml">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\JetBrains\ReSharper\v7.1\SDK\Bin\JetBrains.ReSharper.Psi.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="JetBrains.ReSharper.Psi.Xml">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\JetBrains\ReSharper\v7.1\SDK\Bin\JetBrains.ReSharper.Psi.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MoveNestedContentToAttributeAction.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
